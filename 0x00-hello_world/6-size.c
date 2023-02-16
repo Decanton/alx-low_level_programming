@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- *main -  A program that prints size of types of various data.
- * Return 0 (Sucess)
+ *main -  A program that prints size of types of various data
+ * Description: The program prints size of data types
+ * Return: 0 (Sucess)
  */
 int main(void)
 {
