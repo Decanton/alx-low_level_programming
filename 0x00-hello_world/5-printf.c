@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * main -a function that prints a line.
+ * main - a function that prints a line
+ * Description: printing a line with a new line
  * Return: Always 0 (Success)
  */
 int main(void)
