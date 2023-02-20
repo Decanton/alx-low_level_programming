@@ -6,14 +6,19 @@
 
 int main(void)
 {
-	char ap;
+	int n = 97;
 
-	for (ap = 'a'; ap <= 'z'; ap++)
+	while (n <= 122)
 	{
-		if (ap != 'q' && ap != 'e')
-			putchar(ap);
+		if (n == 101 || n == 113)
+		{
+			n++;
+			continue;
+		}
+		putchar(n);
+		n++;
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
 
