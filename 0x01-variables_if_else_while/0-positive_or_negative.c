@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <time.h>
-#include <unistd.h>
+#include <stdlib.h>
 /**
  * main - a program that prints random number with their identity
  * betty style doc for function main goes there
