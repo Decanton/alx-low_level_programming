@@ -3,13 +3,15 @@
  * main - program printing alphabet letters in  reverse
  * Return: 0 always
  */
-
 int main(void)
 {
-	char pd;
+	int n = 122;
 
-	for (pd = 'z'; pd >= 'a'; pd--)
-		putchar(pd);
-	putchar("\n");
+	while (n >= 97)
+	{
+		putchar(n);
+		n--;
+	}
+	putchar('\n');
 	return (0);
 }
