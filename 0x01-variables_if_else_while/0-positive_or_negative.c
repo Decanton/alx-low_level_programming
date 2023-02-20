@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdlib.h>
 /**
- * main - a program that prints random number with their identity
+ * main - determine whether arandom number is positive, - or zero
  * betty style doc for function main goes there
- * Return : Always 0 (Success)
+ * Return: Always 0 (Success)
 */
 
 int main(void)
