@@ -1,7 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 /**
  * main - all combinations of two digits
  * Return: 0 Always
@@ -9,19 +6,19 @@
 
 int main(void)
 {
-	int r, s;
+	int d, p;
 
-	for (r = '0'; r < '9'; r++)
+	for (d = '0'; d < '9'; d++)
 	{
-	for (s = r + s; s <= '9'; s++)
+	for (p = d + 1; p <= '9'; p++)
 	{
-	if (s != r)
+	if (p != d)
 	{
-	putchar(s);
-	putchar(r);
-	if (r == '8' && s == '9')
+	putchar(d);
+	putchar(p);
+	if (d == '8' && p == '9')
 	continue;
-	putchar (' , ');
+	putchar (',');
 	putchar (' ');
         }
 	}
