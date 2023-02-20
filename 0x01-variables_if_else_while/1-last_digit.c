@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  * main - This program will assign a random number to the variable
- * Return : 0 Always
+ * Return: 0 Always
  */
 
 int main(void)
