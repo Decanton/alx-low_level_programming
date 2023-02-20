@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - write alphabet in lowercase
  * Return: 0 always
