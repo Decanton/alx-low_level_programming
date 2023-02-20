@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - write alphabet in lowercase
  * Return: 0 always
@@ -7,12 +6,13 @@
 
 int main(void)
 {
-	char aph;
+	int n = 97;
 
-	for (aph = 'a'; aph <= 'z'; aph++)
+	while (n <= 122)
 	{
-		putchar(aph);
+		putchar(n);
+		n++;
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
