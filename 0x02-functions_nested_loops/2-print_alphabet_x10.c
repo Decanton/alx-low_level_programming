@@ -1,21 +1,20 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - function that prints the alphabet 10 times in lower case
- * Return: no trurn type
+ * Return: Always 0
  */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
-	char c = 'a';
-	int i;
+	char c;
+	int i = 0;
 
-	for (i = 0; i < 10; i++)
+	while (i <= 9)
 	{
-		while (c <= 'z')
-		{
-			_putchar(c);
-			c++;
-		}
-		_putchar('\n');
-		return (0);
+	for (c = 'a'; c <= 'z'; c++)
+	{
+	_putchar(c);
+	}
+	_putchar('\n');
+	i++;
 	}
 }
