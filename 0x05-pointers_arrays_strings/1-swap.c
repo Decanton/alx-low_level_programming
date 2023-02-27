@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * swap_int - functions to swap integers
@@ -9,6 +9,8 @@
 
 void swap_int(int *a, int *b)
 {
-	*a = 42;
-	*b = 98;
+	int temp = *a;
+
+	*a = *b;
+	*b = temp;
 }
