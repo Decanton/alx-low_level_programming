@@ -1,23 +1,27 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * is_palindrome - checks if a given string is a palindrome
- * @s: input string
- * Return: 1 if palindrome, 0 otherwise
+ * is_palindrome - checks if a string is a palindrome
+ * @s: string to check
+ * Return: 1 if @s is a palindrome, 0 otherwise
  */
 
 int is_palindrome(char *s)
 {
-	int len = strlen(s);
-	int i;
+	char *rev = s;
 
-	for (i = 0; i < len / 2; i++)
+	if (*s == '\0')
+	return (1);
+
+	while (*(rev + 1))
+	rev++;
+
+	while (rev > s)
 	{
-	if (s[i] != s[len - i - 1])
-	{
+	if (*s != *rev)
 	return (0);
-	}
+	s++;
+	rev--;
 	}
 
 	return (1);
