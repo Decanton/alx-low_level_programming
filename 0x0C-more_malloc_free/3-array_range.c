@@ -12,7 +12,7 @@
 
 int *array_range(int min, int max)
 {
-	int i;
+	int i = 0, t = min;
 	int *ptr;
 	int size = max - min + 1;
 
@@ -23,8 +23,8 @@ int *array_range(int min, int max)
 	if (ptr == NULL)
 	return (NULL);
 
-	for (i = 0; i < size; i++)
-	ptr[i] = min + i;
+	while (i <= max - min)
+	ptr[i++] = t++;
 
 	return (ptr);
 }
